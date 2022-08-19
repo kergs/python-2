@@ -1,0 +1,13 @@
+#pip install plyer
+
+import time
+from plyer import notification
+
+if __name__== "__main__":
+    while True:
+        notification.notify(
+            title = "ALERT!!",
+            message = "It Time for a quick nap...",
+            timeout = 10
+        )
+        time.sleep(3600)
